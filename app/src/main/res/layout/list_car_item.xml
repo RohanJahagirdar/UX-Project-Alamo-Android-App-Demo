@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="8dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageCar"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/nameCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@id/imageCar"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imageCar"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ownerCar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nameCar"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/nameCar"
+        android:textSize="18dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/rateCar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nameCar"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/ownerCar"
+        android:textSize="18dp"
+        android:text="TextView" />
+
+    <View
+        android:id="@+id/passengersImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/imageCar"
+        android:layout_alignLeft="@id/nameCar"
+        android:background="@drawable/ic_group" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/passengersImage"
+        android:id="@+id/passengers"
+        android:layout_alignBottom="@+id/imageCar"
+        android:text="4"/>
+
+    <View
+        android:id="@+id/totalImage"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignBottom="@+id/imageCar"
+        android:layout_toRightOf="@id/passengers"
+        android:layout_marginLeft="20dp"
+        android:padding="4dp"
+        android:background="@drawable/cash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/totalImage"
+        android:id="@+id/total"
+        android:layout_alignBottom="@+id/imageCar"
+        android:text="$730"/>
+
+</RelativeLayout>

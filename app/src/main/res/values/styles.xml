@@ -1,0 +1,78 @@
+<resources>
+
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+
+        <style name="m1Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/m1ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/m1ColorPrimaryDark</item>
+        </style>
+
+        <style name="m2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/m2ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/m2ColorPrimaryDark</item>
+        </style>
+
+        <style name="m3Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/m3ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/m3ColorPrimaryDark</item>
+        </style>
+
+        <style name="m4Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/m4ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/m4ColorPrimaryDark</item>
+        </style>
+
+        <style name="m5Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/m5ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/m5ColorPrimaryDark</item>
+        </style>
+
+
+        <style name="w1Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/w1ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/w1ColorPrimaryDark</item>
+        </style>
+
+        <style name="w2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/w2ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/w2ColorPrimaryDark</item>
+        </style>
+
+        <style name="w3Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/w3ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/w3ColorPrimaryDark</item>
+        </style>
+
+        <style name="w4Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/w4ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/w4ColorPrimaryDark</item>
+        </style>
+
+        <style name="w5Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/w5ColorPrimary</item>
+            <item name="colorPrimaryDark">@color/w5ColorPrimaryDark</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

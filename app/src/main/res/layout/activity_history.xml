@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/onboarding_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="@dimen/default_theme_button_side"
+            android:layout_height="@dimen/default_theme_button_side"
+            android:id="@+id/retain_theme"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="X"/>
+
+        <ImageView
+            android:layout_width="@dimen/selected_pic_width"
+            android:layout_height="@dimen/selected_pic_height"
+            android:id="@+id/profile_image"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/m_1"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your history is empty! Book a ride to view your history."
+    android:layout_below="@id/profile_image"
+    android:layout_margin="16dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/profile_image"
+            android:layout_margin="16dp"
+            android:visibility="invisible">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/historyList">
+            </ListView>
+        </ScrollView>
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

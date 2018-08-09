@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/onboarding_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"/>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjahagirdar.alamo.CarSelectedActivity">
+
+    <ImageView
+        android:id="@+id/imageCar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Features"
+        android:id="@+id/txtfeatures"
+        android:layout_below="@id/imageCar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <com.rjahagirdar.alamoproject.ExpandableTextView
+        android:id="@+id/expandleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtfeatures"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Details"
+        android:id="@+id/txtdetails"
+        android:layout_below="@id/expandleTextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserve"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/reserveButton"
+        android:textColor="@color/yellowAccent"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtdetails"
+        android:layout_above="@id/reserveButton"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtdetails"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="Owner" />
+
+            <TextView
+                android:id="@+id/owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Owner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txtdetails"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="Rate"/>
+
+            <TextView android:layout_width="match_parent"
+                android:id="@+id/rate"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Owner"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txtdetails"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="Mileage"/>
+
+            <TextView android:layout_width="match_parent"
+                android:id="@+id/mileage"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Owner"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txtdetails"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="Passengers"/>
+
+            <TextView android:layout_width="match_parent"
+                android:id="@+id/passengers"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Owner"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

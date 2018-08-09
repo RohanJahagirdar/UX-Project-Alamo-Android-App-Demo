@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/onboarding_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjahagirdar.alamo.PaymentCompletionActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/reservationComplete"
+        android:text="Reservation Complete" />
+
+    <ImageView
+        android:id="@+id/imageCar"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/reservationComplete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/carpoolRequest"
+        android:layout_below="@id/imageCar"
+        android:text="The following Alamo User is travelling to: " />
+
+
+    <ImageView
+        android:id="@+id/imageCarpooler"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@id/carpoolRequest"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/carpooler"
+        android:layout_below="@id/carpoolRequest" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageCarpooler"
+        android:layout_margin="16dp"
+        android:layout_alignTop="@id/imageCarpooler"
+        android:id="@+id/name"
+        android:text="Name: Margarette Awe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageCarpooler"
+        android:layout_margin="16dp"
+        android:id="@+id/location"
+        android:layout_below="@id/name"
+        android:text="Location: Chestnut Ave"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/location"
+        android:layout_below="@id/location"
+        android:drawableRight="@android:drawable/star_big_on"
+        android:text="Rating" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp">
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="Accept"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

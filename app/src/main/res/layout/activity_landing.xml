@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/onboarding_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjahagirdar.alamo.LandingActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_below="@id/pager"
+        android:layout_margin="16dp"
+        android:id="@+id/createOrHistoryButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/yellowAccent"/>
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createOrHistoryButton"
+        android:text="Please select a pickup location"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <Spinner
+        android:id="@+id/location_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:layout_margin="16dp"
+        android:entries="@array/locations_arrays"
+        android:prompt="@string/location_prompt" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_spinner"
+        android:text="Please select a Category"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_text"
+        android:layout_margin="16dp"
+        android:entries="@array/categories_arrays"
+        android:prompt="@string/category_prompt" />
+
+    <TextView
+        android:id="@+id/time_from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_spinner"
+        android:layout_margin="16dp"
+        android:text="Time"/>
+
+    <ImageButton
+        android:id="@+id/datepickerButtonFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time_from_text"
+        android:layout_toEndOf="@+id/time_from_text"
+        android:background="@android:drawable/ic_menu_my_calendar"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/time_to_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_spinner"
+        android:layout_toRightOf="@id/datepickerButtonFrom"
+        android:layout_margin="16dp"
+        android:text="Time"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@android:drawable/ic_menu_my_calendar"
+        android:id="@+id/datepickerButtonTo"
+        android:layout_alignTop="@id/time_to_text"
+        android:layout_toRightOf="@id/time_to_text"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/reserveButton"
+        android:textColor="@color/yellowAccent"
+        android:background="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
+</LinearLayout>

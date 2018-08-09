@@ -1,0 +1,29 @@
+<resources>
+
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_minimum">4dp</dimen>
+    <dimen name="margin_default">8dp</dimen>
+    <dimen name="margin_maximum">16dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_extra">24dp</dimen>
+
+    <dimen name="padding_minimum">4dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="padding_extra">12dp</dimen>
+    <dimen name="padding_maximum">16dp</dimen>
+
+    <dimen name="selected_pic_width">120dp</dimen>
+    <dimen name="selected_pic_height">120dp</dimen>
+
+    <dimen name="option_pic_width">60dp</dimen>
+    <dimen name="option_pic_height">60dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="default_theme_button_side">28dp</dimen>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellowAccent">#ffe700</color>
+
+    <color name="m1ColorPrimary">#99D9EA</color>
+    <color name="m1ColorPrimaryDark">#269DBB</color>
+    <color name="m1tabsScrollColor">#B00201</color>
+
+    <color name="m2ColorPrimary">#FF4F4F</color>
+    <color name="m2ColorPrimaryDark">#C60000</color>
+    <color name="m2tabsScrollColor">#B00201</color>
+
+    <color name="m3ColorPrimary">#008080</color>
+    <color name="m3ColorPrimaryDark">#003737</color>
+    <color name="m3tabsScrollColor">#B00201</color>
+
+    <color name="m4ColorPrimary">#B5E61D</color>
+    <color name="m4ColorPrimaryDark">#4A600B</color>
+    <color name="m4tabsScrollColor">#B00201</color>
+
+    <color name="m5ColorPrimary">#C8BFE7</color>
+    <color name="m5ColorPrimaryDark">#6248BB</color>
+    <color name="m5tabsScrollColor">#B00201</color>
+
+
+
+    <color name="w1ColorPrimary">#FFA4FF</color>
+    <color name="w1ColorPrimaryDark">#9F009F</color>
+    <color name="w1tabsScrollColor">#B00201</color>
+
+    <color name="w2ColorPrimary">#B97A57</color>
+    <color name="w2ColorPrimaryDark">#5B3926</color>
+    <color name="w2tabsScrollColor">#B00201</color>
+
+    <color name="w3ColorPrimary">#7A77D8</color>
+    <color name="w3ColorPrimaryDark">#1A1F5E</color>
+    <color name="w3tabsScrollColor">#B00201</color>
+
+    <color name="w4ColorPrimary">#FF80C0</color>
+    <color name="w4ColorPrimaryDark">#9D004F</color>
+    <color name="w4tabsScrollColor">#B00201</color>
+
+    <color name="w5ColorPrimary">#FF9D3C</color>
+    <color name="w5ColorPrimaryDark">#A45200</color>
+    <color name="w5tabsScrollColor">#B00201</color>
+
+    <color name="onboarding_first">#269DBB</color>
+    <color name="onboarding_second">#FF4F4F</color>
+    <color name="onboarding_third">#008080</color>
+    <color name="onboarding_fourth">#FF9D3C</color>
+    <color name="onboarding_fifth">#6248BB</color>
+</resources>
